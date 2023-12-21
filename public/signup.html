@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./img/tab-icon.jpg" />
+    <title>The Bev</title>
+    <script defer src="../index.js"></script>
+
+    <style>
+      form {
+        max-width: fit-content;
+        max-height: fit-content;
+        background-color: #ffcc808f;
+        border-radius: 20px;
+        padding: 2.5rem;
+        margin: 0 1rem;
+      }
+
+      .btn-primary-logsign {
+        --bs-btn-color: #fff;
+        --bs-btn-bg: #6d360f;
+        --bs-btn-border-color: #6d360f;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #402009;
+        --bs-btn-hover-border-color: #402009;
+        --bs-btn-focus-shadow-rgb: 49, 132, 253;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: #6d360f;
+        --bs-btn-active-border-color: #6d360f;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: #fff;
+        --bs-btn-disabled-bg: #6d360f;
+        --bs-btn-disabled-border-color: #6d360f;
+      }
+      .hidden {
+        opacity: 0;
+        transition: all 1s;
+      }
+      .show {
+        opacity: 1;
+        transition: all 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <main
+      class="d-flex justify-content-center form-signin w-100 m-auto mt-4 hidden"
+    >
+      <form action="signup" method="post">
+        <img
+          class="mb-4"
+          src="./img/6685390_1.jpg"
+          alt=""
+          width="150"
+          height="150"
+          style="border-radius: 50%"
+        />
+        <h1 class="h3 mb-3 fw-normal">Sign In So We Remember You :)</h1>
+        <br />
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="John Doe"
+            name="name"
+            required
+          />
+          <label for="name">Name</label>
+        </div>
+        <br />
+        <div class="form-floating">
+          <input
+            type="tel"
+            class="form-control"
+            id="number"
+            placeholder="9876543210"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            name="phone"
+            required
+          />
+          <label for="number">Phone No.</label>
+        </div>
+        <br />
+        <div class="form-floating">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="name@example.com"
+            name="email"
+            required
+          />
+          <label for="floatingInput">Email address</label>
+        </div>
+        <br />
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="floatingPassword"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <label for="floatingPassword">Password</label>
+        </div>
+        <br />
+        <!-- <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >We Send U Updates, U Get Good Coffee. DEAL</label
+          >
+        </div> -->
+
+        <!-- <div class="form-check text-start my-3">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value="remember-me"
+            id="flexCheckDefault"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me 👉🏾👈🏾
+          </label>
+        </div> -->
+        <a href="./index.html"
+          ><button class="btn btn-primary-logsign w-100 py-2" type="submit">
+            Sign in
+          </button></a
+        >
+        <p class="mt-5 mb-3 text-body-secondary">© 2023</p>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/tab-icon.jpg" />
+    <script defer src="./index.js"></script>
+    <title>The Bev</title>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 header-border"
+      >
+        <div class="col-md-3 mb-2 mb-md-0">
+          <a
+            href="/"
+            class="d-inline-flex link-body-emphasis text-decoration-none docs-creator"
+          >
+            <h4 class="header-title">The Bev</h4>
+          </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+          <li>
+            <a
+              href="./tea.html"
+              class="nav-link px-2 docs-creator px-3"
+              style="color: #402009"
+              >Tea</a
+            >
+          </li>
+          <li>
+            <a
+              href="./coffee.html"
+              class="nav-link px-2 docs-creator px-3"
+              style="color: #402009"
+              >Coffee</a
+            >
+          </li>
+          <li>
+            <a
+              href="./about.html"
+              class="nav-link px-2 docs-creator px-3"
+              style="color: #402009"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="./contact.html"
+              class="nav-link px-2 docs-creator px-3"
+              style="color: #402009"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <div class="col-md-3 text-end">
+          <% if (email!=null) { %>
+            <a href=""
+            ><button
+              id="loginbutton"
+              disabled
+              class="btn btn-outline-primary-logsign me-2 "
+            >
+             <%=email %>
+            </button>
+          </a>
+          <a href="/signout"
+            ><button type="button" class="btn btn-primary-logsign">
+              Log-out
+            </button>
+          </a>
+          <%}else { %>
+            <a href="./login.html"
+            ><button
+              id="loginbutton"
+              type="button"
+              class="btn btn-outline-primary-logsign me-2 "
+            >
+              Login
+            </button>
+          </a>
+          <a href="./signup.html"
+            ><button type="button" class="btn btn-primary-logsign">
+              Sign-up
+            </button>
+          </a>
+          <% } %>
+        </div>
+      </header>
+
+      <div
+        class="container col-xxl-8 px-4 py-5 bg-color row justify-content-evenly hidden"
+        style="margin-left: 0"
+      >
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-4 col-lg-6">
+            <img
+              src="./img/6685390.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+              style="border-radius: 50%"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+              Why Settle For Less
+            </h1>
+            <p class="lead">
+              Get some of the best beverages in the entire city at your nearest
+              The Bev Shop
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button
+                type="button"
+                onClick="document.getElementById('coffee').scrollIntoView();"
+                class="btn btn-primary-logsign btn-lg px-4 me-md-2"
+              >
+                Coffee
+              </button>
+              <button
+                type="button"
+                onClick="document.getElementById('tea').scrollIntoView();"
+                class="btn btn-outline-primary-logsign btn-lg px-4"
+              >
+                Tea
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <hr />
+        <br />
+        <img
+          src="./img/home-background.jpeg"
+          alt=""
+          width="100%"
+          style="border-radius: 20px"
+        />
+        <br />
+        <hr />
+      </div>
+
+      <div class="">
+        <div class="spacing hidden1" id="tea">
+          <div>
+            <h3
+              class="border-green gradient-green h3 mb-3 fw-normal gradient-green px-3 py-2"
+              style="border-radius: 15px"
+            >
+              &nbsp;In The Mood For Some
+              <span class="color-green">お茶</span> (Tea in Japanese)
+            </h3>
+          </div>
+          <div class="spacing row justify-content-evenly">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Herbal Tea</h5>
+                <hr />
+                <img
+                  src="./img/herbal-tea.webp"
+                  alt="herbal tea"
+                  width="100%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">A Refreashing Taste Of Nature</p>
+                <a href="./tea.html" class="card-link">Nature Woo</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Matcha Tea</h5>
+                <hr />
+                <img
+                  src="./img/matcha-tea.jpg"
+                  alt="matcha tea"
+                  width="100%"
+                  height="50%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">The Fulfiling Japanese Taste</p>
+                <a href="./tea.html" class="card-link">That's green</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Desi Chai</h5>
+                <hr />
+                <img
+                  src="./img/desi-chai.jpg"
+                  alt="desi chai"
+                  width="100%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">Indian Flavour Tops All Else</p>
+                <a href="./tea.html" class="card-link">Only 10/-</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="spacing row hidden1" id="coffee">
+          <div class="text-end">
+            <h3
+              class="border-brown gradient-brown h3 mb-3 fw-normal gradient-green px-3 py-2"
+              style="border-radius: 15px"
+            >
+              Or Maybe Some <span class="color-brown">コーヒー</span> (Coffee in
+              Japanese)&nbsp;
+            </h3>
+          </div>
+          <div class="spacing row justify-content-evenly">
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Iced Latte</h5>
+                <hr />
+                <img
+                  src="./img/iced-latte.jpg"
+                  alt="iced latte"
+                  width="100%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">A Nice Cool Drink To Cool Off</p>
+                <a href="./coffee.html" class="card-link">Oo Cold!</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Cappuccino</h5>
+                <hr />
+                <img
+                  src="./img/cappucino.jpg"
+                  alt="cappuccino"
+                  width="100%"
+                  height="55%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">Light Yet Energising</p>
+                <a href="./coffee.html" class="card-link">The Usaul I See</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <hr />
+                <img
+                  src="./img/expresso.jpg"
+                  alt="espresso"
+                  width="100%"
+                  height="55%"
+                  style="border-radius: 20px"
+                />
+                <br /><br />
+                <p class="card-text">Something Strong Ehh?</p>
+                <a href="./coffee.html" class="card-link"
+                  >You got some work to do, am i Right?</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="column bg-color">
+        <div class="row justify-content-center spacingtimes2">
+          <div class="customize-text mt-5">
+            <div class="container-coffee">
+              <div class="coffee-header">
+                <div
+                  class="coffee-header__buttons coffee-header__button-one"
+                ></div>
+                <div
+                  class="coffee-header__buttons coffee-header__button-two"
+                ></div>
+                <div class="coffee-header__display"></div>
+                <div class="coffee-header__details"></div>
+              </div>
+              <div class="coffee-medium">
+                <div class="coffe-medium__exit"></div>
+                <div class="coffee-medium__arm"></div>
+                <div class="coffee-medium__liquid"></div>
+                <div
+                  class="coffee-medium__smoke coffee-medium__smoke-one"
+                ></div>
+                <div
+                  class="coffee-medium__smoke coffee-medium__smoke-two"
+                ></div>
+                <div
+                  class="coffee-medium__smoke coffee-medium__smoke-three"
+                ></div>
+                <div
+                  class="coffee-medium__smoke coffee-medium__smoke-for"
+                ></div>
+                <div class="coffee-medium__cup"></div>
+              </div>
+              <div class="coffee-footer"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mb-5 py-5">
+          <button
+            type="button"
+            onclick="window.location.href='./tea.html';"
+            class="btn btn-primary-tea btn-lg px-4 me-md-2 spacing hidden1"
+            style="width: 10rem"
+          >
+            Tea</button
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button
+            type="button"
+            onclick="window.location.href='./coffee.html';"
+            class="btn btn-primary-coffee btn-lg px-4 me-md-2 spacing hidden2"
+            style="width: 10rem"
+          >
+            Coffee
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+    >
+      <div class="col-md-4 d-flex align-items-center">
+        <a
+          href="/"
+          class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1 docs-creator"
+        >
+          <h3>The Bev</h3>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© 2023 Company, Inc</span
+        >
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+          <a
+            class="text-body-secondary docs-creator"
+            href="https://www.x.com"
+            target="_blank"
+            >Twitt At Us</a
+          >
+        </li>
+        <li class="ms-3">
+          <a
+            class="text-body-secondary docs-creator"
+            href="https://www.instagram.com"
+            target="_blank"
+            >Slide In Our DMs</a
+          >
+        </li>
+        <li class="ms-3">
+          <a
+            class="text-body-secondary docs-creator"
+            href="https://www.facebook.com"
+            target="_blank"
+            >Who uses this again?</a
+          >
+        </li>
+      </ul>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
