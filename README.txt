@@ -1,12 +1,62 @@
-# By:
-# Tanay Tibrewal (Backend)
-# Milan Patel (Frontend)
-# Vanshik Waghela (Frontend)
 
-# Steps to Run: 
-# Open a new terminal:
-# Install Node Modules by running: <npm i>
-# Type: <node app.js>
-# Open this url in browser: localhost:3000/
-# Make sure to have MongoSh and MongoDB Running Locally
-# And configure the connection string accordingly
+# Coffee Shop Project
+
+A very basic coffee shop website project made in semester-3 while learning web development. 
+
+Features: 
+- Browse Tea and Coffee 
+- Order 
+- Make payment (Only Add Credentials) 
+- Admins can view orders  
+
+
+## Authors
+
+- [@Tanay Tibrewal](https://www.github.com/tanay2804)
+- [@Milan Patel](https://www.github.com/tanay2804)
+- [@Vanshik Waghela](https://www.github.com/tanay2804)
+
+
+## Tech Stack
+
+**Client:** HTML, CSS, Javascript
+
+**Server:** Node, Express, EJS, MongoDB & Mongoose
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  node app.js
+```
+Go to Endpoint in Browser
+
+```bash
+  localhost:3000/
+```
+
+
+## Preview
+
+![App Screenshot](public/img/screenshot.jpg)
+
