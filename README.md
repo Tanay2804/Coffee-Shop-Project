@@ -13,8 +13,8 @@ Features:
 ## Authors
 
 - [@Tanay Tibrewal](https://www.github.com/tanay2804)
-- [@Milan Patel](https://www.github.com/tanay2804)
-- [@Vanshik Waghela](https://www.github.com/tanay2804)
+- [@Milan Patel]()
+- [@Vanshik Waghela]()
 
 
 ## Tech Stack
