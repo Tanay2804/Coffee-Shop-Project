@@ -55,6 +55,7 @@ Go to Endpoint in Browser
   localhost:3000/
 ```
 
+Make sure to install MongoDB in your system and check the connection String
 
 ## Preview
 
