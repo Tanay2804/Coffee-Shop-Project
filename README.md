@@ -58,5 +58,5 @@ Go to Endpoint in Browser
 
 ## Preview
 
-![App Screenshot](public/img/screenshot.jpg)
+![App Screenshot](public/img/screenshot.jpg?raw=true)
 
