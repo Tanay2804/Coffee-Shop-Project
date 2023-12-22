@@ -60,6 +60,3 @@ Make sure to install MongoDB in your system and check the connection String
 ## Preview
 
 ![App Screenshot](public/img/screenshot.jpg?raw=true)
-
-
-
