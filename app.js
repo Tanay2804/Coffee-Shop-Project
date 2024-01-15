@@ -9,9 +9,7 @@ app.use(express.static("public")); // serve all public static files
 
 mongoose.connect(url);
 
-const con = mongoose.connection;
-
-con.on("open", () => {
+mongoose.connection.on("open", () => {
   console.log("connected...");
 });
 
