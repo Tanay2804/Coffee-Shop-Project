@@ -14,7 +14,7 @@ Features:
 
 - [@Tanay Tibrewal](https://www.github.com/tanay2804)
 - [@Milan Patel]()
-- [@Vanshik Waghela]()
+- [@Vanshik Waghela](https://www.github.com/VanshikWaghela)
 
 
 ## Tech Stack
