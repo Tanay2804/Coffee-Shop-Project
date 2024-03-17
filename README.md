@@ -12,9 +12,9 @@ Features:
 
 ## Authors
 
-- [@TanayTibrewal](https://www.github.com/tanay2804)
-- [@MilanPatel]()
-- [@VanshikWaghela](https://www.github.com/VanshikWaghela)
+- [@tanaytibrewal](https://www.github.com/tanay2804)
+- [@milanpatel]()
+- [@vanshikwaghela](https://www.github.com/VanshikWaghela)
 
 
 ## Tech Stack
